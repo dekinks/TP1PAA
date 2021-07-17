@@ -52,12 +52,12 @@ def main() :
     n_vertices = int(input_uri.split(" ")[0])
     n_arestas = int(input_uri.split(" ")[1])
 
-    arquivo = open('entradaRatoNoLabirinto.txt', 'w')
+    arquivo = open('RatoNoLabirinto/entradaRatoNoLabirinto.txt', 'w')
     for i in range(n_arestas):
         arquivo.write(input() + "\n")
 
     arquivo.close()
-    arquivo = open('entradaRatoNoLabirinto.txt', 'r')
+    arquivo = open('RatoNoLabirinto/entradaRatoNoLabirinto.txt', 'r')
     entrada = [[] for _ in range(n_arestas)] 
 
     vertices = arquivo.readlines()
