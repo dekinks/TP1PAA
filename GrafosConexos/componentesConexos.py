@@ -77,7 +77,7 @@ def main() :
         
         grafo = Grafo(entrada)
 
-        print("Case #" + str(caso) + ": ")
+        print("Case #" + str(caso) + ":")
 
         visitados = []
         num = 0
@@ -87,10 +87,10 @@ def main() :
                 componente = DFS([], grafo.adj, fonte)
                 visitados = visitados + componente
                 componente.sort()
-                print(str(','.join(componente))+", ")
+                print(str(','.join(componente))+",")
                 num += 1
 
-        print(str(num) + " connected components")
+        print(str(num) + " connected components\n")
         n_casos -= 1
         caso += 1
 
